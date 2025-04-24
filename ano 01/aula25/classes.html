@@ -1,0 +1,18 @@
+<script>
+    class Pessoa{
+        constructor (nome, idade){
+            this. nome = nome;
+            this.idade = idade;
+        }
+
+        saudacao() {
+            return `Olá ${this.nome}! Você tem ${this.idade} anos idade.`;
+        }
+
+
+    }
+
+const pessoa1 = new Pessoa ("Jennifer",23);
+document.write (pessoa1.saudacao());
+
+</script>

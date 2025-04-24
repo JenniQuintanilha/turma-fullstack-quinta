@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main#main {
+  display: flex;
+  justify-content: space-evenly;
+
+  
+}
+
+main#main .square {
+  margin: 30px 0;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+}
+
+footer#footer,
+header#header {
+  width: 100vw;
+  padding: 10px 0;
+  text-align: center;
+background-color: #292929;
+color: #fff;
+}
+

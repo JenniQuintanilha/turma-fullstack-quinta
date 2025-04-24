@@ -1,0 +1,24 @@
+<script>
+
+const pessoas = [
+ {nome: "João", idade: 32, pontos: 0}
+ {nome: "Maria", idade: 29 , pontos: 75}
+ {nome: "Pedro", idade: 25, pontos: 59}
+];
+
+/* const pessoasMapeadas = pessoas.map(pessoa => pessoa.pontos += 10);
+const pessoasFiltradas = pessoas.filter(pessoa => pessoa.idade < 30);
+pessoasFiltradas.forEach( pessoa => document.write(`nome: ${pessoa.nome} |
+pontos: ${pessoas.pontos} <br>`)); */
+
+pessoas
+   .map(pessoa => pessoa.pontos += 10) // Adiciona 10 pontos a cada pessoa
+   .filter(pessoa => pessoa.idade < 30); // Filtra pessoas com menos de 30 anos
+
+pessoas
+    .forEach(pessoa => {
+    document.write(`nome: ${pessoa.nome} | pontos: ${pessoa.pontos} <br>`); // Corrigida 'pessoa.pontos'
+});
+
+
+</script>
